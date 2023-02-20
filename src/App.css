@@ -1,38 +1,151 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+#root {
+  background: #efefef;
+}
+
+a {
+  color: #272727;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background: #b9b8b8;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img.header-logo {
+  height: 8vh;
+}
+
+.footer {
+  width: 100%;
+  height: 5vh;
+  background: black;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationBttns {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #6c6c6f;
+  color: #6c6c6f;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #5c5c65;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #3e3e43;
+}
+
+.paginationDisabled a {
+  display: none;
+}
+
+.cardbox {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.cardbox:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.p {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pricetag {
+  color: grey;
+  font-size: 22px;
+}
+
+.cards-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  background: #bbb;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.title-main {
+  padding-left: 15px;
+}
+
+.containter-left {
+  width: 60%;
+  padding-left: 15px;
+}
+
+.container-right {
+  width: 40%;
+}
+
+.slide-container {
+  width: 300px;
+  margin: auto;
+}
+
+.product-information {
+  margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .containter-left {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container-right {
+    width: 60%;
   }
 }
